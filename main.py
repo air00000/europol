@@ -16,7 +16,7 @@ logging.basicConfig(
 def run_api():
     """Запуск FastAPI сервера"""
     logging.info(f"Starting API server on {API_HOST}:{API_PORT}")
-    uvicorn.run(api_app, host=API_HOST, port=API_PORT, log_level="info")
+    uvicorn.run(api_app, host="0.0.0.0", port=8001)
 
 
 def run_bot():
