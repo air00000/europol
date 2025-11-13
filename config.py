@@ -18,7 +18,7 @@ BOT_TOKEN = os.getenv('BOT_TOKEN')
 
 # API
 API_HOST = os.getenv('API_HOST', '0.0.0.0')
-API_PORT = int(os.getenv('API_PORT', 8000))
+API_PORT = int(os.getenv('API_PORT', 8001))
 API_URL = f"http://localhost:{API_PORT}/generate_pdf"
 
 # Admin

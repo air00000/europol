@@ -28,7 +28,7 @@ def run_bot():
 
 if __name__ == "__main__":
     print("🚀 Europol PDF Generator Starting...")
-    print("📊 API Server: http://localhost:8000")
+    print("📊 API Server: http://localhost:8001")
     print("🤖 Telegram Bot: Running...")
     print("🛠️  Admin features: Enabled")
 

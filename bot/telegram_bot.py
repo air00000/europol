@@ -51,7 +51,7 @@ async def get_link(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("⏳ Генерирую PDF с твоей ссылкой...")
 
     try:
-        r = requests.post("http://localhost:8000/generate_pdf", json={"url": url}, timeout=60)
+        r = requests.post("http://localhost:8001/generate_pdf", json={"url": url}, timeout=60)
         if r.status_code == 200:
             path = os.path.join(TEMP_DIR, "europol_verification.pdf")
             with open(path, "wb") as f:
